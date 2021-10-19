@@ -26,6 +26,11 @@ namespace USCivilWarBattles_DB.Controllers
             return _context.Battles.Find(id);
         }
 
+        public Battle GetbyCode(string code)
+        {
+            return _context.Battles.SingleOrDefault(b => b.BattleCode == code);
+        }
+
         public bool Create(Battle battle)
         {
             if(battle.Id != 0)

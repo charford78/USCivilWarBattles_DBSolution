@@ -74,7 +74,7 @@ namespace USCivilWarBattles_DB.Models
                     .HasMaxLength(10)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Commander1)
+                entity.Property(e => e.CommanderName)
                     .IsRequired()
                     .HasMaxLength(30)
                     .IsUnicode(false)
